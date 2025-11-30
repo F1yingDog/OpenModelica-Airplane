@@ -4,7 +4,7 @@ package SpringDemper
       Placement(visible = true, transformation(origin = {0, 100}, extent = {{-10, -10}, {10, 10}}, rotation = 0), iconTransformation(origin = {0, 100}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
     parameter Real k = 1 "Stiffness factor";
     Real forceFactor(start=1);
-    Modelica.Units.SI.Distance s(start = 3);
+    Modelica.Units.SI.Distance s(start = 2.5);
     Boolean e;
   equation
     s = forcePort.x;
@@ -103,4 +103,3 @@ end MassSpringDemper;
   annotation(
     uses(Modelica(version = "4.0.0")));
 end SpringDemper;
-
